@@ -1,5 +1,5 @@
 def print_num(num):
-    print(num)
+    print(num, end='')
 
 
 print_num(8)
