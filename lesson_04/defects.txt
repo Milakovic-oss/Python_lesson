@@ -1,0 +1,11 @@
+Заголовок: Методы класса StringUtils не обрабатывают значение None.
+
+Описание: При передаче значения None в методы capitalize, trim, 
+contains или delete_symbol программа падает с ошибкой AttributeError.
+
+Шаги воспроизведения:
+1. Вызвать метод string_utils.capitalize(None).
+
+Ожидаемый результат: Метод должен вернуть None или выбросить понятную ошибку TypeError.
+
+Фактический результат: Падение с AttributeError: 'NoneType' object has no attribute 'capitalize'.
